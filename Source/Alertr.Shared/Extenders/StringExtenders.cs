@@ -41,6 +41,7 @@ namespace Alertr.Shared
             return regex.IsMatch(value);
         }
 
+        [DebuggerHidden]
         public static bool IsEmailAddress(this string value)
         {
             const string PATTERN =
