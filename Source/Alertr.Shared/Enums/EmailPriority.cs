@@ -1,6 +1,6 @@
 ﻿namespace Alertr.Shared
 {
-    public enum MailPriority
+    public enum EmailPriority
     {
         High,
         Low,

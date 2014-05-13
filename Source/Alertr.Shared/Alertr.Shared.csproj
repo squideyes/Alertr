@@ -65,7 +65,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -74,8 +78,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\MailPriority.cs" />
+    <Compile Include="Attributes\HtmlAttribute.cs" />
+    <Compile Include="Attributes\EmailAddressListAttribute.cs" />
+    <Compile Include="Enums\EmailPriority.cs" />
+    <Compile Include="Extenders\ObjectExtenders.cs" />
     <Compile Include="Extenders\StringExtenders.cs" />
+    <Compile Include="Helpers\ValidationHelper.cs" />
     <Compile Include="Primatives\AlertBase.cs" />
     <Compile Include="Enums\AlertVia.cs" />
     <Compile Include="Primatives\EmailAddress.cs" />
@@ -83,6 +91,12 @@
     <Compile Include="Primatives\PhoneAlert.cs" />
     <Compile Include="Primatives\SmsAlert.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
