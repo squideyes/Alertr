@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BadJson" xml:space="preserve">
+    <value>{"a:"1"}</value>
+  </data>
+  <data name="GoodJson" xml:space="preserve">
+    <value>{"a":"1"}</value>
+  </data>
+  <data name="HugeJson" xml:space="preserve">
+    <value>[
+    {
+        "id": 0,
+        "guid": "9686dead-d0fb-46fb-a081-04184eb40554",
+        "isActive": true,
+        "balance": "$2,895.79",
+        "picture": "http://placehold.it/32x32",
+        "age": 30,
+        "eyeColor": "blue",
+        "name": "Curry Bauer",
+        "gender": "male",
+        "company": "NAMEGEN",
+        "email": "currybauer@namegen.com",
+        "phone": "+1 (975) 588-3715",
+        "address": "730 Gain Court, Sunbury, Louisiana, 8612",
+        "about": "Reprehenderit sint elit do deserunt esse excepteur consequat commodo Lorem eiusmod labore. Labore id in fugiat voluptate sunt cillum sunt incididunt. Adipisicing cillum velit id amet ut ex excepteur quis aute ut ex ut ad sit. Pariatur aliquip commodo occaecat ea.\r\n",
+        "registered": "2014-01-20T18:37:59 +05:00",
+        "latitude": 60.84643,
+        "longitude": -62.621233,
+        "tags": [
+            "commodo",
+            "anim",
+            "magna",
+            "magna",
+            "nostrud",
+            "excepteur",
+            "voluptate"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Tabatha Allen"
+            },
+            {
+                "id": 1,
+                "name": "Sherry Mathis"
+            },
+            {
+                "id": 2,
+                "name": "Helga Petersen"
+            }
+        ],
+        "greeting": "Hello, Curry Bauer! You have 8 unread messages.",
+        "favoriteFruit": "banana"
+    },
+    {
+        "id": 1,
+        "guid": "c6e4f171-54a8-4819-b1c2-cf120ae399f1",
+        "isActive": false,
+        "balance": "$3,098.22",
+        "picture": "http://placehold.it/32x32",
+        "age": 24,
+        "eyeColor": "blue",
+        "name": "Mason Dodson",
+        "gender": "male",
+        "company": "PARCOE",
+        "email": "masondodson@parcoe.com",
+        "phone": "+1 (816) 561-2848",
+        "address": "220 Stuyvesant Avenue, Wacissa, North Carolina, 6004",
+        "about": "Ex laborum do incididunt amet eu qui veniam. Enim eiusmod cupidatat officia culpa reprehenderit. Ut incididunt dolore exercitation ex consectetur culpa dolor sunt anim ut. Aliqua anim fugiat nisi cillum nulla excepteur in. Exercitation ullamco dolore dolor adipisicing excepteur est.\r\n",
+        "registered": "2014-03-11T10:57:52 +04:00",
+        "latitude": 38.174464,
+        "longitude": 85.939717,
+        "tags": [
+            "Lorem",
+            "adipisicing",
+            "aute",
+            "laboris",
+            "reprehenderit",
+            "sunt",
+            "voluptate"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Roxie Barnett"
+            },
+            {
+                "id": 1,
+                "name": "Natalia Hood"
+            },
+            {
+                "id": 2,
+                "name": "Amie Franco"
+            }
+        ],
+        "greeting": "Hello, Mason Dodson! You have 3 unread messages.",
+        "favoriteFruit": "strawberry"
+    },
+    {
+        "id": 2,
+        "guid": "03cb8d59-ef5f-4e40-883a-474b30b998e9",
+        "isActive": false,
+        "balance": "$1,676.45",
+        "picture": "http://placehold.it/32x32",
+        "age": 26,
+        "eyeColor": "brown",
+        "name": "Hoover Ferrell",
+        "gender": "male",
+        "company": "INRT",
+        "email": "hooverferrell@inrt.com",
+        "phone": "+1 (844) 526-3616",
+        "address": "389 Dorchester Road, Troy, Mississippi, 7673",
+        "about": "Proident exercitation ut velit et ut. Consectetur anim proident labore ullamco aliqua voluptate consequat dolore cupidatat aute cillum est. Ut proident et eu ea adipisicing laboris irure enim voluptate id tempor officia. Mollit adipisicing deserunt tempor sit mollit eiusmod exercitation est. Ad dolore aliquip tempor ad fugiat adipisicing eiusmod non veniam Lorem ad. Sint mollit commodo et magna ut mollit quis occaecat commodo incididunt occaecat ex do laboris. Sit nulla anim quis labore excepteur ex qui proident laboris duis.\r\n",
+        "registered": "2014-04-06T11:52:15 +04:00",
+        "latitude": 37.698272,
+        "longitude": 20.346451,
+        "tags": [
+            "culpa",
+            "excepteur",
+            "exercitation",
+            "eiusmod",
+            "sit",
+            "nostrud",
+            "tempor"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Ingram Burt"
+            },
+            {
+                "id": 1,
+                "name": "Fitzpatrick Graham"
+            },
+            {
+                "id": 2,
+                "name": "Tyler Blackwell"
+            }
+        ],
+        "greeting": "Hello, Hoover Ferrell! You have 4 unread messages.",
+        "favoriteFruit": "banana"
+    },
+    {
+        "id": 3,
+        "guid": "9bb3b7fc-7874-489f-b0b3-792dad964849",
+        "isActive": false,
+        "balance": "$3,193.51",
+        "picture": "http://placehold.it/32x32",
+        "age": 31,
+        "eyeColor": "green",
+        "name": "Jennifer Hodge",
+        "gender": "female",
+        "company": "MEDMEX",
+        "email": "jenniferhodge@medmex.com",
+        "phone": "+1 (998) 410-2609",
+        "address": "716 Cox Place, Osmond, South Dakota, 1504",
+        "about": "Ex laboris eiusmod excepteur dolore. Laborum mollit veniam eiusmod officia sint proident voluptate exercitation ad reprehenderit tempor. Fugiat ad officia officia dolor labore ea exercitation Lorem aliquip. Qui exercitation laboris excepteur laborum deserunt tempor id dolore officia labore. Ut occaecat cillum Lorem incididunt proident nostrud anim in ad ea cillum.\r\n",
+        "registered": "2014-04-19T17:52:23 +04:00",
+        "latitude": -57.046173,
+        "longitude": 19.93214,
+        "tags": [
+            "cillum",
+            "laborum",
+            "commodo",
+            "nisi",
+            "minim",
+            "irure",
+            "eu"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Janette Frank"
+            },
+            {
+                "id": 1,
+                "name": "Valeria Nicholson"
+            },
+            {
+                "id": 2,
+                "name": "Sasha Murphy"
+            }
+        ],
+        "greeting": "Hello, Jennifer Hodge! You have 8 unread messages.",
+        "favoriteFruit": "apple"
+    },
+    {
+        "id": 4,
+        "guid": "87b1fdde-dfef-49b5-93d4-b1f7bb7cdfdc",
+        "isActive": true,
+        "balance": "$2,799.31",
+        "picture": "http://placehold.it/32x32",
+        "age": 34,
+        "eyeColor": "green",
+        "name": "Petra Gutierrez",
+        "gender": "female",
+        "company": "PREMIANT",
+        "email": "petragutierrez@premiant.com",
+        "phone": "+1 (983) 499-3526",
+        "address": "778 Box Street, Gibbsville, Virginia, 2049",
+        "about": "Aute culpa pariatur quis aliquip cillum eiusmod ut. Proident irure proident ea sit elit. Officia consectetur fugiat nostrud irure.\r\n",
+        "registered": "2014-01-18T11:54:00 +05:00",
+        "latitude": -57.106129,
+        "longitude": -96.850565,
+        "tags": [
+            "elit",
+            "sit",
+            "quis",
+            "fugiat",
+            "qui",
+            "ullamco",
+            "laborum"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Bernice Mercer"
+            },
+            {
+                "id": 1,
+                "name": "Polly Church"
+            },
+            {
+                "id": 2,
+                "name": "Bessie Winters"
+            }
+        ],
+        "greeting": "Hello, Petra Gutierrez! You have 6 unread messages.",
+        "favoriteFruit": "banana"
+    },
+    {
+        "id": 5,
+        "guid": "5c5403ee-83a2-4cc4-9abe-d0ba70c94f07",
+        "isActive": true,
+        "balance": "$2,694.87",
+        "picture": "http://placehold.it/32x32",
+        "age": 29,
+        "eyeColor": "green",
+        "name": "Johanna Knox",
+        "gender": "female",
+        "company": "QUORDATE",
+        "email": "johannaknox@quordate.com",
+        "phone": "+1 (814) 494-3263",
+        "address": "330 Vandalia Avenue, Hamilton, Missouri, 3562",
+        "about": "Duis incididunt esse dolore anim ex reprehenderit enim. Voluptate officia duis aliquip non ad consectetur laboris anim cupidatat. Nostrud quis labore aliquip non pariatur. Deserunt ipsum culpa ad dolor esse do qui ipsum labore non adipisicing eiusmod. Anim deserunt do consectetur do enim irure reprehenderit officia dolore ipsum. Voluptate sit sunt ea cupidatat consequat aliquip anim amet officia.\r\n",
+        "registered": "2014-01-21T04:03:43 +05:00",
+        "latitude": 50.995961,
+        "longitude": -12.762499,
+        "tags": [
+            "nulla",
+            "nisi",
+            "excepteur",
+            "exercitation",
+            "commodo",
+            "do",
+            "consequat"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Shepard Callahan"
+            },
+            {
+                "id": 1,
+                "name": "Angelia Puckett"
+            },
+            {
+                "id": 2,
+                "name": "Sheri Adkins"
+            }
+        ],
+        "greeting": "Hello, Johanna Knox! You have 2 unread messages.",
+        "favoriteFruit": "strawberry"
+    },
+    {
+        "id": 6,
+        "guid": "36f0fbd1-1235-4119-8642-44200ddaa28f",
+        "isActive": false,
+        "balance": "$1,930.56",
+        "picture": "http://placehold.it/32x32",
+        "age": 21,
+        "eyeColor": "blue",
+        "name": "Bentley Butler",
+        "gender": "male",
+        "company": "COSMOSIS",
+        "email": "bentleybutler@cosmosis.com",
+        "phone": "+1 (849) 537-2068",
+        "address": "485 Bush Street, Sussex, Texas, 6656",
+        "about": "Velit do id velit aliqua fugiat et tempor amet reprehenderit aliquip nulla deserunt. Sint eu ex excepteur est proident. Ipsum Lorem amet eiusmod quis laborum aute occaecat do dolore culpa. Enim commodo incididunt excepteur dolor qui pariatur proident aute magna culpa cillum laboris amet. Labore aute do exercitation commodo pariatur magna id laborum Lorem dolore. Et consectetur proident irure ipsum dolor occaecat velit deserunt adipisicing pariatur.\r\n",
+        "registered": "2014-02-05T10:00:08 +05:00",
+        "latitude": -40.701289,
+        "longitude": 65.958648,
+        "tags": [
+            "eu",
+            "minim",
+            "sit",
+            "incididunt",
+            "cupidatat",
+            "amet",
+            "nisi"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Stacie Sargent"
+            },
+            {
+                "id": 1,
+                "name": "Jodie Kim"
+            },
+            {
+                "id": 2,
+                "name": "Everett Roberson"
+            }
+        ],
+        "greeting": "Hello, Bentley Butler! You have 5 unread messages.",
+        "favoriteFruit": "strawberry"
+    }
+]</value>
+  </data>
+</root>
